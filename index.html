@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css-folder/style.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.4.0/confetti.browser.min.js"></script>
+</head>
+<body>
+    <h1>Happy Birthday!</h1>
+    <div class="envelope envelope-closed" id="envelope" onclick="toggleEnvelope()"> 
+        <div class="open-label" id="openLabel">Open</div>
+        <div class="message" id="birthdayMessage">[Your Birthday Message Here]</div>
+    </div>
+    <p id="wishText">Send your wishes by clicking the button below</p> 
+    <a href="https://ngl.link/pew26107/" target="_blank" class="pulse">Share a Wish!</a>
+
+    <div class="wish-form" id="wishForm">
+        <input type="text" class="wish-input" id="wishInput" placeholder="Write your wish here..." required />
+        <button onclick="submitWish()">Send Wish</button>
+    </div>
+    <script src="js-folder/script.js" defer></script> 
+</body>
+</html>
